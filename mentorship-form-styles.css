@@ -1,0 +1,50 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px; /* Adjust the maximum width as needed */
+    margin: 0 auto;
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: space-between; /* Create space between columns */
+}
+
+/* Individual form items (labels and inputs) */
+label,
+input,
+textarea {
+    width: calc(48% - 8px); /* Adjust the width of individual items (48% for two columns with a small gap) */
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+/* Full-width button */
+button {
+    width: 100%;
+}
+
+/* Responsive styles for mobile */
+@media screen and (max-width: 600px) {
+    form {
+        justify-content: flex-start; /* Align items to the start for a single column on mobile */
+    }
+
+    /* Reset width for single column on mobile */
+    label,
+    input,
+    textarea {
+        width: 100%;
+    }
+}
+
+aside.widget-area {
+    margin-top: 0 !important; 
+}
